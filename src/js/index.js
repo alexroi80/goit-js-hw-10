@@ -46,7 +46,7 @@ function renderBreeds(data) {
 selectEl.addEventListener('change', onSelect);
 
 function onSelect(evt) {
-  breedId = evt.target.value;
+  const breedId = evt.target.value;
   loaderEl.hidden = false;
   fetchCatByBreed(breedId)
     .then(data => {
